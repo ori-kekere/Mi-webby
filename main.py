@@ -87,7 +87,7 @@ with st.container():
 
 with st.container():
             st.write("---")
-            st.header("Clideo Editor")
+            st.header("Avatar")
             st.write("##")
             video_column, text_column = st.columns((2, 1))
             with video_column:
