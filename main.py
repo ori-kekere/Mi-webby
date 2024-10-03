@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_lottie import st_lottie
 import requests
 
 st.set_page_config(page_title="Cidely", page_icon=":e_mail:", layout="wide")
@@ -17,8 +16,6 @@ def local_css(file_name):
 
 local_css("styles/styles.css")
 
-# load assets
-lottie_coding = load_lottieul("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 
 # Header
 with st.container():
