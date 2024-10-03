@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
 
-st.set_page_config(page_title="Cido", page_icon=":e_mail:", layout="wide")
+st.set_page_config(page_title="Cidely", page_icon=":e_mail:", layout="wide")
 
 def load_lottieul(url):
     r = requests.get(url)
@@ -22,8 +22,8 @@ lottie_coding = load_lottieul("https://assets5.lottiefiles.com/packages/lf20_fcf
 
 # Header
 with st.container():
-    st.title("Welcome to Cido!")
-    st.subheader("Cido is the name of this website, which is where I show all my animation videos.")
+    st.title("Welcome to Cidely!")
+    st.subheader("Cidely is the name of this website, which is where I show all my animation videos. Don't ask me why its called 'Cidely'! ")
 
 # what I do
 with st.container():
@@ -100,4 +100,14 @@ with st.container():
     with left_column:
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
-        st.empty()
+        st.header("Game!")
+        st.write("Please visit the game that i've been working on using the link below!")
+
+        url = "https://gd.games/holloy/pali--"
+        st.markdown("Check out my game! [game](%s)" % url)
+
+with st.container():
+    footer_html = """<div style='text-align: center;'>
+      <p>Developed with ❤️ by Cidely</p>
+    </div>"""
+    st.markdown(footer_html, unsafe_allow_html=True)
