@@ -22,15 +22,17 @@ lottie_coding = load_lottieul("https://assets5.lottiefiles.com/packages/lf20_fcf
 
 # Header
 with st.container():
+    st.image("images/Cidely.png", caption="")
     st.title("Welcome to Cidely!")
-    st.subheader("Cidely is the name of this website, which is where I show all my animation videos. Don't ask me why its called 'Cidely'! ")
+    st.subheader("Cidely is the name of this website, which is where I show all my animation videos. "
+                 "Don't ask me why its called 'Cidely'! ")
 
 # what I do
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header("Why I do this")
+        st.subheader("About Me")
         st.write("##")
         st.write("""
         I did this because I want to show the world what I am capable of
@@ -38,7 +40,8 @@ with st.container():
         dropped out of school or don't like sports, I didn't drop out of school (cause I'm still in school) 
         and I like sports! SO what kind of sports do I like? Well I like playing football, running and also badminton!
         Even though alot of people might not like them I like them and that's what makes me me! I
-        know that the animation you are seeing is a boy but I'm a girl! Let that sink in your head!
+        know that the animation you are seeing is a boy but I'm a girl! Let that sink in your head! 
+        I hope you enjoy looking on this website.
         """)
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
@@ -82,6 +85,22 @@ with st.container():
         Hope you enjoyed!
         """)
 
+with st.container():
+            st.write("---")
+            st.header("Clideo Editor")
+            st.write("##")
+            video_column, text_column = st.columns((2, 1))
+            with video_column:
+                video_file = open("videos/avatr1.mp4", "rb")
+                video_bytes = video_file.read()
+
+                st.video(video_bytes)
+            with text_column:
+                st.subheader("Avatar")
+                st.write("""
+                Watch the video to know what I am going to talk about.
+                """)
+
 # contact form
 with st.container():
     st.write("---")
@@ -100,11 +119,11 @@ with st.container():
     with left_column:
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
-        st.header("Game!")
-        st.write("Please visit the game that i've been working on using the link below!")
+        st.header("Socials!")
+        st.write("Need prof that I'm real? I'm sure you don't but if you do click the link below.")
 
-        url = "https://gd.games/holloy/pali--"
-        st.markdown("Check out my game! [game](%s)" % url)
+        url = "https://github.com/ori-kekere/"
+        st.markdown("Need prof click here [social](%s)" % url)
 
 with st.container():
     footer_html = """<div style='text-align: center;'>
