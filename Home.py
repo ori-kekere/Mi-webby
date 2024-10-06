@@ -57,10 +57,7 @@ with st.container():
     with text_column:
         st.subheader("Introduction")
         st.write("""
-        In this video you are going to learn how to: 
-        - Use an animation editor
-        - I am going to take you through the process (or boring process) of animating
-        - In the next video is going to be about video editor.
+        Hi Guys, welcome to my website!
         """)
 
 
