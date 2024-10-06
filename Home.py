@@ -46,16 +46,16 @@ with st.container():
 # animations and drawings
 with st.container():
     st.write("---")
-    st.header("Wick Editor")
+    st.header("Introduction")
     st.write("##")
     video_column, text_column = st.columns((2, 1))
     with video_column:
-        video_file = open("videos/avvop.mp4", "rb")
+        video_file = open("videos/for_web.mp4", "rb")
         video_bytes = video_file.read()
 
         st.video(video_bytes)
     with text_column:
-        st.subheader("Wick Editor")
+        st.subheader("Introduction")
         st.write("""
         In this video you are going to learn how to: 
         - Use an animation editor
@@ -63,40 +63,6 @@ with st.container():
         - In the next video is going to be about video editor.
         """)
 
-with st.container():
-    st.write("---")
-    st.header("Clideo Editor")
-    st.write("##")
-    video_column, text_column = st.columns((2, 1))
-    with video_column:
-        video_file = open("videos/viedi.mp4", "rb")
-        video_bytes = video_file.read()
-
-        st.video(video_bytes)
-    with text_column:
-        st.subheader("Clideo Editor")
-        st.write("""
-        In this video you are going to learn how to: 
-        - Use an video editor
-        - I am going to take you through the process of video editing
-        Hope you enjoyed!
-        """)
-
-with st.container():
-            st.write("---")
-            st.header("Avatar")
-            st.write("##")
-            video_column, text_column = st.columns((2, 1))
-            with video_column:
-                video_file = open("videos/avatr1.mp4", "rb")
-                video_bytes = video_file.read()
-
-                st.video(video_bytes)
-            with text_column:
-                st.subheader("Avatar")
-                st.write("""
-                Watch the video to know what I am going to talk about.
-                """)
 
 # contact form
 with st.container():
