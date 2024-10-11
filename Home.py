@@ -60,6 +60,23 @@ with st.container():
         Hi Guys, welcome to my website!
         """)
 
+with st.container():
+    st.write("---")
+    st.header("Song")
+    st.write("##")
+    video_column, text_column = st.columns((2, 1))
+    with video_column:
+        video_file = open("videos/song.mp4", "rb")
+        video_bytes = video_file.read()
+
+        st.video(video_bytes)
+    with text_column:
+        st.subheader("Song")
+        st.write("""
+        Hi Guys, this is the song that I made and I hope you enjoy it! Don't judge my singing and please don't mind the 
+        back ground noise.
+        """)
+
 
 # contact form
 with st.container():
